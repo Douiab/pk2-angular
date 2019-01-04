@@ -12,6 +12,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { InfoPersonnelleComponent } from './components/info-personnelle/info-personnelle.component';
 
 import { HomeModule } from './home/home.module';
 
@@ -22,7 +23,8 @@ import { HomeModule } from './home/home.module';
     LandingComponent,
     ProfileComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    InfoPersonnelleComponent
   ],
   imports: [
     BrowserModule,
