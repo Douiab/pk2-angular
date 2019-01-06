@@ -1,3 +1,16 @@
-<p>
-  login works!
-</p>
+<div class="card card-register">
+    <h3 class="title">Bienvenue</h3>
+    <div class="text-center">
+        <h6 class="title">Accédez à l'espace sécurisé G-BANK ONLINE</h6>
+    </div>
+    <form class="register-form">
+        <label>Numéro de compte</label>
+        <input type="text" class="form-control" placeholder="Numéro de compte" name="num_compte" [(ngModel)]="num_compte">
+        <label>Code secret</label>
+        <input type="password" class="form-control" placeholder="Code secret" name="password" [(ngModel)]="password">
+        <button class="btn btn-danger btn-block btn-round" (click)="login()">Valider</button>
+    </form>
+    <div class="forgot">
+        <a href="#" class="btn btn-link btn-danger">Des questions?</a>
+    </div>
+  </div>

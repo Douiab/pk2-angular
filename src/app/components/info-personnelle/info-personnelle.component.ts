@@ -10,7 +10,6 @@ import { LoginService } from '../login/login.service';
 })
 export class InfoPersonnelleComponent implements OnInit {
   user: User;
-  user2: any;
 
   constructor(private loginService: LoginService) {
   }

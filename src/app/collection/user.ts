@@ -1,7 +1,7 @@
 export class User {
     public _id: string;
     public cin: string;
-    public login: number;
+    public login: string;
     public nom: string;
     public prenom: string;
     public password: string;

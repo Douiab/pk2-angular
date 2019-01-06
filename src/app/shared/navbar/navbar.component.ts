@@ -66,4 +66,22 @@ export class NavbarComponent implements OnInit {
             return false;
         }
     }
+    isLanding() {
+        var titlee = this.location.prepareExternalUrl(this.location.path());
+        if( titlee === '/landing' ) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    isProfilOrHome() {
+        var titlee = this.location.prepareExternalUrl(this.location.path());
+        if( (titlee === '/home') ||  (titlee === '/user-profile') ) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }

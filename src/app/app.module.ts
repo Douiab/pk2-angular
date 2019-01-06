@@ -14,7 +14,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { InfoPersonnelleComponent } from './components/info-personnelle/info-personnelle.component';
 import { LoginService } from './components/login/login.service';
-
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { LoginComponent } from './components/login/login.component';
 
 import { HomeModule } from './home/home.module';
 
@@ -26,7 +27,9 @@ import { HomeModule } from './home/home.module';
     ProfileComponent,
     NavbarComponent,
     FooterComponent,
-    InfoPersonnelleComponent
+    InfoPersonnelleComponent,
+    CarouselComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
