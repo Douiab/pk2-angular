@@ -1,12 +1,13 @@
 export class User {
-    _id: string;
-    login: string;
-    type: string;
-    email: string;
-    tele: string;
-    pass: string;
-    confpass: string;
-    captcha:string;
+    public _id: string;
+    public cin: string;
+    public login: number;
+    public nom: string;
+    public prenom: string;
+    public password: string;
+    public email: string;
+    public adresse:string;
+    public tel:string;
     constructor() {
     }
 }

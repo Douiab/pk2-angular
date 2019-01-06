@@ -13,6 +13,8 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { InfoPersonnelleComponent } from './components/info-personnelle/info-personnelle.component';
+import { LoginService } from './components/login/login.service';
+
 
 import { HomeModule } from './home/home.module';
 
@@ -34,7 +36,9 @@ import { HomeModule } from './home/home.module';
     AppRoutingModule,
     HomeModule
   ],
-  providers: [],
+  providers: [
+    LoginService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
