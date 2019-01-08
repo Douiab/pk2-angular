@@ -9,10 +9,18 @@ import { ProfileComponent } from './profile/profile.component';
 import { SignupComponent } from './signup/signup.component';
 import { LandingComponent } from './landing/landing.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
+import { DotationsComponent } from './components/dotations/dotations.component';
+import { OperationsComponent } from './components/operations/operations.component';
 
 const routes: Routes =[
-    { path: 'home',             component: HomeComponent },
-    { path: 'home2',             component: Home2Component },
+    { path: 'home',
+      component: HomeComponent,
+      children: [
+        { path: 'operations',     component:  OperationsComponent},
+        { path: 'dotations',      component: DotationsComponent }
+      ]
+    },
+    { path: 'home2',            component: Home2Component },
     { path: 'user-profile',     component: ProfileComponent },
     { path: 'signup',           component: SignupComponent },
     { path: 'landing',          component: LandingComponent },

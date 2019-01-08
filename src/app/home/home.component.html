@@ -1,4 +1,5 @@
-<div class="wrapper">
+    <div class="wrapper">
+            
     <div class="page-header section-dark" style="background-image: url('assets/img/antoine-barres.jpg')">
         <div class="filter"></div>
         <div class="content-center">
@@ -7,6 +8,7 @@
                     <div class="angular-logo">
                         <img src="assets/img/angular2-logo.png" alt="">
                     </div>
+                    <router-outlet></router-outlet>
                     <h1 class="presentation-title">Paper Kit 2</h1>
                     <div class="fog-low">
                         <img src="assets/img/fog-low.png" alt="">
@@ -14,6 +16,7 @@
                     <div class="fog-low right">
                         <img src="assets/img/fog-low.png" alt="">
                     </div>
+                    
                 </div>
 
                 <h2 class="presentation-subtitle text-center">Free Bootstrap 4 UI Kit for Angular 4+</h2>
@@ -29,12 +32,17 @@
         </h6>
     </div>
     <div class="main">
-        <div class="section ">
-            <div class="container">
-                <div class="row">
-                    <h1>ASMAA</h1>
+            <div class="section ">
+                <div class="container">
+                    <div class="row">
+                            <p>
+                                    <button (click)="ShowOperations()"> ShowOperations</button>
+                                    <button (click)="ShowDotations()"> ShowDotations</button>
+                                </p>
+                                
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </div> 
+    
 </div>

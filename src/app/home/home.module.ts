@@ -10,6 +10,9 @@ import { HomeComponent } from './home.component';
 import { ComponentsModule } from '../components/components.module';
 import { SideNavComponent } from '../components/side-nav/side-nav.component';
 import { SideBarComponent } from '../components/side-bar/side-bar.component';
+import { DotationsComponent } from '../components/dotations/dotations.component';
+import { OperationsComponent } from '../components/operations/operations.component';
+
 
 @NgModule({
     imports: [
@@ -22,7 +25,9 @@ import { SideBarComponent } from '../components/side-bar/side-bar.component';
     declarations: [
         HomeComponent,
         SideNavComponent,
-        SideBarComponent
+        SideBarComponent,
+        DotationsComponent,
+        OperationsComponent
     ],
     exports:[ HomeComponent ],
     providers: []
