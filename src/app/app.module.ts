@@ -12,12 +12,15 @@ import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { InfoPersonnelleComponent } from './components/info-personnelle/info-personnelle.component';
-import { LoginService } from './components/login/login.service';
-import { CarouselComponent } from './components/carousel/carousel.component';
+import { ComponentsModule } from './components/components.module';
 import { LoginComponent } from './components/login/login.component';
+import { LoginService } from './components/login/login.service';
+import { InfoPersonnelleComponent } from './components/info-personnelle/info-personnelle.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+
 
 import { HomeModule } from './home/home.module';
+import { Home2Module } from './home2/home2.module';
 
 @NgModule({
   declarations: [
@@ -27,9 +30,9 @@ import { HomeModule } from './home/home.module';
     ProfileComponent,
     NavbarComponent,
     FooterComponent,
+    LoginComponent,
     InfoPersonnelleComponent,
-    CarouselComponent,
-    LoginComponent
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,9 @@ import { HomeModule } from './home/home.module';
     FormsModule,
     RouterModule,
     AppRoutingModule,
-    HomeModule
+    HomeModule,
+    Home2Module,
+    ComponentsModule
   ],
   providers: [
     LoginService

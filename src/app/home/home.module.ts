@@ -8,6 +8,8 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home.component';
 
 import { ComponentsModule } from '../components/components.module';
+import { SideNavComponent } from '../components/side-nav/side-nav.component';
+import { SideBarComponent } from '../components/side-bar/side-bar.component';
 
 @NgModule({
     imports: [
@@ -17,7 +19,11 @@ import { ComponentsModule } from '../components/components.module';
         RouterModule,
         ComponentsModule
     ],
-    declarations: [ HomeComponent ],
+    declarations: [
+        HomeComponent,
+        SideNavComponent,
+        SideBarComponent
+    ],
     exports:[ HomeComponent ],
     providers: []
 })

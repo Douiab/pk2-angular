@@ -28,14 +28,14 @@
                         <p class="d-lg-none">Linkedin</p>
                     </a>
                 </li>
-                <li class="nav-item" *ngIf="isHome()">
-                    <a [routerLink]="['/user-profile']" class="btn btn-danger btn-round">Profile</a>
-                </li>
                 <li class="nav-item" *ngIf="isLanding()">
                     <a routerLink="/signup" routerLinkActive="active"  class="btn btn-danger btn-round" style="background-color:#d67220; border-color: rgb(179, 179, 179)">Accéder aux comptes</a>
                 </li>
                 <li class="nav-item" *ngIf="isProfilOrHome()">
                     <a href="#" class="nav-link"><i class="nc-icon nc-single-02"></i>Contacter mon conseiller</a>
+                </li>
+                <li class="nav-item" *ngIf="isHome()">
+                    <a [routerLink]="['/user-profile']" class="btn btn-danger btn-round">Profile</a>
                 </li>
             </ul>
         </div>
