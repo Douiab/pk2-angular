@@ -9,6 +9,7 @@ import { HomeComponent } from './home.component';
 
 import { ComponentsModule } from '../components/components.module';
 import { SideNavComponent } from '../components/side-nav/side-nav.component';
+import { SideNavAdComponent } from '../components/side-nav-ad/side-nav-ad.component';
 import { SideBarComponent } from '../components/side-bar/side-bar.component';
 import { DotationsComponent } from '../components/dotations/dotations.component';
 import { OperationsComponent } from '../components/operations/operations.component';
@@ -20,14 +21,16 @@ import { OperationsComponent } from '../components/operations/operations.compone
         BrowserModule,
         FormsModule,
         RouterModule,
-        ComponentsModule
+        ComponentsModule,
+        NgbModule
     ],
     declarations: [
         HomeComponent,
         SideNavComponent,
         SideBarComponent,
         DotationsComponent,
-        OperationsComponent
+        OperationsComponent,
+        SideNavAdComponent
     ],
     exports:[ HomeComponent ],
     providers: []

@@ -1,48 +1,60 @@
-    <div class="wrapper">
-            
+<div class="wrapper">
+    <div class="filter"></div>
     <div class="page-header section-dark" style="background-image: url('assets/img/antoine-barres.jpg')">
-        <div class="filter"></div>
-        <div class="content-center">
-            <div class="container">
-                <div class="title-brand">
-                    <div class="angular-logo">
-                        <img src="assets/img/angular2-logo.png" alt="">
+        <div class="container">
+            <div class="section text-center" style="padding: 10px;">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-1 p-l-0 p-r-0  in" id="sidebar">
+                                <div class="list-group panel">
+                                    <div class="list-group panel">
+                                        <a [routerLink]="['/home/operations']" [routerLinkActive]="['active']" class="list-group-item collapsed" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false"><i class="fa fa-dashboard"></i> <span class="hidden-sm-down">Item 1</span> </a>
+                                        <div class="collapse" id="menu1">
+                                            <a href="home/#menu1sub1" class="list-group-item" data-toggle="collapse" aria-expanded="false">Subitem 1 </a>
+                                            <div class="collapse" id="menu1sub1">
+                                                <a href="#" class="list-group-item" data-parent="#menu1sub1">Subitem 1 a</a>
+                                                <a href="#" class="list-group-item" data-parent="#menu1sub1">Subitem 2 b</a>
+                                                <a href="#menu1sub1sub1" class="list-group-item" data-toggle="collapse" aria-expanded="false">Subitem 3 c </a>
+                                                <div class="collapse" id="menu1sub1sub1">
+                                                    <a href="#" class="list-group-item" data-parent="#menu1sub1sub1">Subitem 3 c.1</a>
+                                                    <a href="#" class="list-group-item" data-parent="#menu1sub1sub1">Subitem 3 c.2</a>
+                                                </div>
+                                                <a href="#" class="list-group-item" data-parent="#menu1sub1">Subitem 4 d</a>
+                                                <a href="#menu1sub1sub2" class="list-group-item" data-toggle="collapse"  aria-expanded="false">Subitem 5 e </a>
+                                                <div class="collapse" id="menu1sub1sub2">
+                                                    <a href="#" class="list-group-item" data-parent="#menu1sub1sub2">Subitem 5 e.1</a>
+                                                    <a href="#" class="list-group-item" data-parent="#menu1sub1sub2">Subitem 5 e.2</a>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="list-group-item" data-parent="#menu1">Subitem 2</a>
+                                            <a href="#" class="list-group-item" data-parent="#menu1">Subitem 3</a>
+                                        </div>
+                                        <a href="#" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-film"></i> <span class="hidden-sm-down">Item 2</span></a>
+                                        <a href="#menu3" class="list-group-item collapsed" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false"><i class="fa fa-book"></i> <span class="hidden-sm-down">Item 3 </span></a>
+                                        <div class="collapse" id="menu3">
+                                            <a href="#" class="list-group-item" data-parent="#menu3">3.1</a>
+                                            <a href="#menu3sub2" class="list-group-item" data-toggle="collapse" aria-expanded="false">3.2 </a>
+                                            <div class="collapse" id="menu3sub2">
+                                                <a href="#" class="list-group-item" data-parent="#menu3sub2">3.2 a</a>
+                                                <a href="#" class="list-group-item" data-parent="#menu3sub2">3.2 b</a>
+                                                <a href="#" class="list-group-item" data-parent="#menu3sub2">3.2 c</a>
+                                            </div>
+                                            <a href="#" class="list-group-item" data-parent="#menu3">3.3</a>
+                                        </div>
+                                        
+                                    </div>
+                                      </div>
+                        </div>
+                        <div class="col-md-8 col-xs-1 p-l-0">
+                                <router-outlet></router-outlet>
+                        </div>
                     </div>
-                    <router-outlet></router-outlet>
-                    <h1 class="presentation-title">Paper Kit 2</h1>
-                    <div class="fog-low">
-                        <img src="assets/img/fog-low.png" alt="">
-                    </div>
-                    <div class="fog-low right">
-                        <img src="assets/img/fog-low.png" alt="">
-                    </div>
-                    
-                </div>
-
-                <h2 class="presentation-subtitle text-center">Free Bootstrap 4 UI Kit for Angular 4+</h2>
             </div>
         </div>
-        <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div>
-        <h6 class=" category-absolute ml-auto mr-auto">Designed and coded by
-        <!-- <h6 class="category category-absolute">Designed and coded by -->
-
-            <a href="https://www.creative-tim.com" target="_blank">
-                <img src="assets/img/creative-tim-white-slim2.png" class="creative-tim-logo">
-            </a>
-        </h6>
-    </div>
-    <div class="main">
-            <div class="section ">
-                <div class="container">
-                    <div class="row">
-                            <p>
-                                    <button (click)="ShowOperations()"> ShowOperations</button>
-                                    <button (click)="ShowDotations()"> ShowDotations</button>
-                                </p>
-                                
-                    </div>
-                </div>
-            </div>
-        </div> 
-    
+            <h6 class=" category-absolute ml-auto mr-auto">© 2019, 
+                <!-- <h6 class="category category-absolute">Designed and coded by -->
+                <a href="#" target="_blank">
+                    <img src="assets/img/bank.png" class="creative-tim-logo">
+                </a>
+            </h6>
+        </div>
 </div>
