@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule, } from '@angular/common';
 import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http'
 
 import { HomeComponent } from './home/home.component';
 import { Home2Component } from './home2/home2.component';
@@ -11,6 +12,7 @@ import { LandingComponent } from './landing/landing.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import { DotationsComponent } from './components/dotations/dotations.component';
 import { OperationsComponent } from './components/operations/operations.component';
+
 
 const routes: Routes =[
     { path: 'home',
@@ -32,6 +34,7 @@ const routes: Routes =[
   imports: [
     CommonModule,
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(routes)
   ],
   exports: [

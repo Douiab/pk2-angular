@@ -1,10 +1,14 @@
 import { Injectable } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable, pipe } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
 
 
 @Injectable()
 export class LoginService {
     user: any;
-constructor() {
+constructor(private http : HttpClient,
+        ) {
 }
 
     getUser() {
@@ -19,6 +23,9 @@ constructor() {
     return this.user;
     }
     login(query){
-        return true;
+        let headers = new HttpHeaders();
+        headers.append('Content-Type','application/json');
+            return this.http.post('http://g-bank.herokuapp.com/login', query,{headers: headers})
+             .pipe(map(res => res));
     }
 }

@@ -17,9 +17,11 @@ export class LoginComponent implements OnInit {
   //function login
   login() {
     let query = {
-      num_compte : this.num_compte,
+      username : this.num_compte,
       password : this.password
     }
-    this.LoginService.login(query);
+    this.LoginService.login(query).subscribe((data:any) => {
+      console.log(data);
+    });
   }
 }
